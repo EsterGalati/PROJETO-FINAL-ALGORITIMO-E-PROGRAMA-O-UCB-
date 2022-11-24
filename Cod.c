@@ -12,8 +12,7 @@ int main (){
     printf("\n\nNome: Cristiano Mundin Borges Junior \nMatricula: UC22200034\nCurso:Ciencia da Computacao ");
 
 printf("\n\nQuantidades de sessoes:");
-scanf("%d", &sessoes);// perguntar quantas sessoes tem
-
+scanf("%d", &sessoes);// Pergunta quantas sessões tem ao usuário.
 while (sessoes >2 || sessoes <1){
     printf("Numero Invalido!");
 
