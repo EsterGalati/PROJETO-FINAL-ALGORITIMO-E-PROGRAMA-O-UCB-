@@ -48,15 +48,44 @@ for(contador = 0; contador < assistiram1; contador++){//*Utilizamos o FOR para p
     scanf("%c", &sexo1);
     fflush (stdin);
 
-   while(sexo1){
-   if(sexo1 == 'F'  || sexo1 == 'M')
+   while(sexo1 != 'F' && sexo1 != 'M' ){
+   
+    printf("invalido");
 
-  
-    printf("Digite a idade");
+    printf("Digite o sexo da %d pessoa:", contador +1);// corrigir para aceitar só f e m /*Pergunta o sexo da pessoa sendo obrigatório responder com M para (Masculino) F para (Feminino)*/
+    scanf("%c", &sexo1);
+    fflush (stdin);}
+///////////////////////////////////////////////////////////////////////////////
+
+
+    printf("Digite a idade da %d pessoa:", contador +1);
     scanf("%d", &idade1);
     fflush (stdin);
+
+    while(idade1 <3 || idade1 >100){
+
+    printf("invalido");
+
+    printf("\nDigite a idade da %d pessoa:", contador +1);
+    scanf("%d", &idade1);
+    fflush (stdin);}
+
+ ///////////////////////////////////////////////////////////////////////////////
+
 
     printf("Digite o tipo de ingresso, inteira ou meia:"); /*Pergunta o tipo de ingresso da pessoa sendo obrigatório responder com M para (Meia) I para (Inteira)*/
     scanf("%c", &ingressos1); // corrigir para aceitar só I e M 
     fflush (stdin);
-}}}
+
+while(ingressos1 != 'i' && ingressos1 !='m'){
+    printf("invalido");
+
+    
+    printf("\nDigite o tipo de ingresso, inteira ou meia:"); /*Pergunta o tipo de ingresso da pessoa sendo obrigatório responder com M para (Meia) I para (Inteira)*/
+    scanf("%c", &ingressos1); // corrigir para aceitar só I e M 
+    fflush (stdin);
+
+}
+  
+}
+}
