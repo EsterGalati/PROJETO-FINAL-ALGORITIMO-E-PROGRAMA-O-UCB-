@@ -193,7 +193,7 @@ int escolha=1;
 while (escolha!=5)
 {
 
-    printf("\n\n ----------------------- ");
+    printf("\n\nBem vindos, selecionem a pipoca para retirada: ");
 
     printf("\n 1 - Opcao 1 Pipoca Salgada ");
     printf("\n 2 - Opcao 2 Pipoca Doce");
