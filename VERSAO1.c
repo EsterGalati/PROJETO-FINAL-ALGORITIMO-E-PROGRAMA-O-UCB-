@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h> //biblioteca matematica
 #include <strings.h> //biblioteca de strings
+#include <conio.h>
 int main (){
 
     /* Para a delclaração das variáveis utilizamos Nomes significativos 
@@ -180,4 +181,83 @@ if (cont_int1 + cont_int2 >cont_mei1 + cont_mei2){
 
         }
         
+}
+
+
+int main(){
+
+int escolha=1;
+
+// Se a escolha for diferente de 5, ele continua o que inicialmente é verdade
+// pois escolha é igual a 1
+while (escolha!=5)
+{
+
+    printf("\n\n ----------------------- ");
+
+    printf("\n 1 - Opcao 1 Pipoca Salgada ");
+    printf("\n 2 - Opcao 2 Pipoca Doce");
+    printf("\n 3 - Opcao 3 Pipoca Caramelo");
+    printf("\n 4 - Opcao 4 Pipoca Chocolate");
+    printf("\n 5 - Fechar Programa ");
+    printf("\n\n Escolha uma opcao: ");
+    scanf("%d",&escolha);
+
+
+// estrutura switch
+switch (escolha) {
+
+case 1:
+{
+
+    printf("\n\n Opcao escolhida: 1 ");
+
+break;
+}
+
+case 2:
+{
+
+    printf("\n\n Opcao escolhida: 2 ");
+
+break;
+}
+
+case 3:
+{
+
+    printf("\n\n Opcao escolhida: 3 ");
+
+break;
+}
+
+case 4:
+{
+
+    printf("\n\n Opcao escolhida: 4 ");
+
+break;
+}
+
+// opção padrão
+default:
+{
+// Se for escolhida a opção 5, ele pula o while utilizando continue para isso 
+if( escolha==5)
+{
+continue;
+}
+// Caso o usuário digite um numero acima de 5, ele irá informar que nao existe essa opção
+    printf("\n\n Nenhuma opcao foi escolhida ");
+break;
+}
+
+}
+
+}
+if( escolha==5)
+    printf("\n\n O Programa foi fechado");
+
+getch(); 
+
 }
