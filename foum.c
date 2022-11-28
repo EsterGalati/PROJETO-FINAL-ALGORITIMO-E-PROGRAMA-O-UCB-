@@ -70,6 +70,7 @@ fflush (stdin);}
 
 printf("\nSexo feminino %d", cont_fem);
 printf("\nSexo masculino %d", cont_masc);
+
 printf ("\nMulheres \n Criancas %d \n adolescente %d\n adulto %d \n idoso %d", criancaf, adolescentef, adultof, idosof);
 printf ("\n \n Homens \nCriancas %d \n adolescente %d\n adulto %d \n idoso %d", criancam, adolescentem, adultom, idosom);
 }
