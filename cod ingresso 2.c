@@ -5,7 +5,7 @@ int main(){
 int ingressos,ingressos2, contador, assistiram, sessao;
 int cont_int1=0, cont_int2=0, cont_mei1=0, cont_mei2=0, total,sessao1,sessao2;
 
-printf("\nQuantas pessoas assistiram ao filme?"); /*Pergunta quantas pessoas assistiram ao filme e guarda esse valor.*/
+printf("\nQuantas pessoas assistiram ao filme?");
     scanf("%d", &assistiram);
 
 for(contador = 0; contador < assistiram; contador++){
@@ -22,10 +22,11 @@ switch (sessao){
 case 1: 
 printf("Se a %d pessoa pagou inteira digite 1, se Spagou meia digite 2:", contador+1); 
 scanf("%d", &ingressos);
-fflush (stdin);break;
+fflush (stdin);
 while( ingressos != 1 && ingressos != 2){
 printf("Invalido!Digite 1 ou 2:");
-printf("\nSe a %d pessoa pagou inteira digite 1, se pagou meia digite 2:",contador+1);
+printf("Se a %d pessoa pagou inteira digite 1, se Spagou meia digite 2:", contador+1); 
+scanf("%d", &ingressos);
 fflush (stdin);}
 
 
@@ -33,11 +34,12 @@ switch (ingressos){
 case 1: cont_int1++;break;
 
 case 2: cont_mei1++;break;}
+break;
 
 case 2:
 printf("Se a %d pessoa pagou inteira digite 1, se pagou meia digite 2:",contador+1); 
 scanf("%d", &ingressos2); 
-fflush (stdin);break;
+fflush (stdin);
 while( ingressos2 != 1 && ingressos2 != 2){
 printf("Invalido!Digite 1 ou 2:");
 printf("\nSe a %d pessoa pagou inteira digite 1, se pagou meia digite 2:", contador+1); 
