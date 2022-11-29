@@ -11,7 +11,7 @@ int main (){
     int criancaf=0, adolescentef=0, adultof=0, idosof=0 , criancam=0, adolescentem=0, adultom=0, idosom=0; // Variáveis de sexo e classificação de idade.
     int cont_fem=0, cont_masc=0;
     int idade;
-    char sexo, filme[20];
+    char sexo, filme[100];
 
     printf("Nome: Luiza Munis Nascimento\nMatricula: UC22201024\nCurso:Engenharia de software.");
     printf("\n\nNome: Ester Luiza Siqueira Correa Galati\nMatricula: UC22200640\nCurso:Ciencia da Computacao ");
@@ -19,7 +19,7 @@ int main (){
     /*Logo abaixo temos o começo do nosso código que pergunta o nome do filme e a quantidade de sessões.*/
     printf("\n\nBem Vindo, para melhor lhe atender informe:\n");
     printf("\nNome do filme:"); 
-    fgets(filme, 20,stdin);
+    fgets(filme, 100,stdin);
     fflush (stdin);
 
     printf("Digite a quantidades de sessoes:");
@@ -132,10 +132,10 @@ while( ingressos != 1 && ingressos != 2){
 
 
 switch (ingressos){
-case 1: cont_int1++;break;
+case 1: cont_int1++;break; //Contador dos ingressos inteiros
 
-case 2: cont_mei1++;break;}
-break;
+case 2: cont_mei1++;break;} // contador ingressos meia
+break;// parada do case
 
 case 2:
     printf("Se a %d pessoa pagou inteira digite 1, se pagou meia digite 2:",contador+1); 
@@ -161,7 +161,7 @@ total = sessao1+ sessao2;
     /*Apresentamos o resultado ao usuário junto com as informações de IDADE, SEXO e 
     VALOR, que foram obtidos.*/
     printf("\n Resultado:\nFilme: %s", filme);
-    printf ("Mulheres: %d pessoas.\nHomens: %d pessoas.", cont_fem, cont_masc);
+    printf ("\nMulheres: %d pessoas.\nHomens: %d pessoas.", cont_fem, cont_masc);
     printf ("\nClassificacao por idade: \nCriancas %d\nAdolescente %d\nAdulto %d \nIdoso %d", criancaf+ criancam, adolescentef+adolescentem,adultof+adultom, idosof+idosom);
     printf("\nMulheres maior de idade: %d", adultof+idosof);
     printf("\nHomens maior de idade: %d", adultom+idosom);
