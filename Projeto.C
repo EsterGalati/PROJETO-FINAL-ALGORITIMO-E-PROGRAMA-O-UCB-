@@ -4,14 +4,6 @@
 #include <conio.h>
 
 
-int entrada(){
-    printf ("*************************************\n");
-    printf ("****          Bem Vindo          ****\n");
-    printf ("****              a              ****\n");
-    printf ("****          Pipoca Super       ****\n");
-    printf ("*************************************\n");
-    }
-
  int menu(){
     int op;
     printf (" \nCardápio \n\n");
@@ -53,12 +45,10 @@ int oppipoca;
           printf ("\nVocê adicionou Pipoca Mista Chocomelo a sua bandeja!\n");
 
           break;
-
       case 5:
           printf ("\nVocê adicionou Pipoca Mista Salgada e Doce a sua bandeja!\n");
 
           break;
-
       default:
         printf ("\nValor incorreto, tente novamente\n");
 
@@ -164,7 +154,6 @@ int main(){
     float tbeb = 0;
     float totalpedido;
     int precopipoca,precobebida;
-    entrada();
     do{
         op = menu();
         switch(op){
