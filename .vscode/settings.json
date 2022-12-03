@@ -1,6 +1,10 @@
 {
     "files.associations": {
+<<<<<<< HEAD
         "CARDAPIO.C": "cpp",
         "Projeto.C": "cpp"
+=======
+        "CARDAPIO.C": "cpp"
+>>>>>>> 8bf1cdd1980e8216d3eddb763dc94db1f0b9d04b
     }
 }
