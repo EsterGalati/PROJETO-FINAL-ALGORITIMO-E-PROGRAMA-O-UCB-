@@ -12,13 +12,15 @@ int main (){
     int cont_fem=0, cont_masc=0;
     int idade;
     char sexo, filme[100];
-    int menu_pipoca; // varieaveis menu de pipoca
+    int menu_pipoca; // variaveis menu de pipoca
     float pipoca_din=0, pip_sal=0,pip_choc=0, pip_car=0, pip_chocomelo=0, pip_ds=0;
     int quant_pipoca=0, lanche;
 
     printf("Nome: Luiza Munis Nascimento\nMatricula: UC22201024\nCurso:Engenharia de software.");
     printf("\n\nNome: Ester Luiza Siqueira Correa Galati\nMatricula: UC22200640\nCurso:Ciencia da Computacao ");
     printf("\n\nNome: Cristiano Mundin Borges Junior \nMatricula: UC22200034\nCurso:Ciencia da Computacao ");
+
+
     /*Logo abaixo temos o começo do nosso código que pergunta o nome do filme e a quantidade de sessões.*/
     printf("\n\nBem Vindo, para melhor lhe atender informe:\n");
     printf("\nNome do filme:"); 
@@ -34,6 +36,7 @@ while (quant_sessoes !=2){
     printf("\nQuantidades de sessoes:");
     scanf("%d", &quant_sessoes);}
     fflush (stdin);
+
     /* Nesse caso perguntamos quantas pessoas assistiram ao filme, caso o usuário digite
     um valor menor que 10 repetiremos a pergunta.*/
     printf("Quantas pessoas assistiram ao filme?");  
@@ -43,6 +46,7 @@ while(assistiram <10){
     printf("\nQuantas pessoas assistiram ao filme?");  
     scanf("%d", &assistiram);}
     fflush (stdin);
+
     /*Utilizamos o FOR para que a pergunta do SEXO F ou M repita de acordo com
     quantidade de pessoas que assistiram o filme */
 for(contador = 0; contador < assistiram; contador++){  
@@ -53,11 +57,11 @@ for(contador = 0; contador < assistiram; contador++){
     /*Utilizamos o WHILE para repetir a pergunta caso o usuário digite uma 
     letra diferente de F ou M */
 while(sexo != 'F' && sexo != 'M' ){
-
     printf("invalido!Digite F para feminino e M para masculino.");
     printf("\nDigite o sexo da %d pessoa:", contador +1);
     scanf("%c", &sexo);
     fflush (stdin);}
+
     /*Utilizamos o IF para caso o usuário digite o sexo feminino parta para
     a próxima pergunta que seria a idade desta pessoa. */
 if(sexo == 'F'){
@@ -82,6 +86,7 @@ while(idade <=3 || idade >=100){
           adultof++;}
              else  if (idade >=65 && idade <=100){
               idosof++;}}
+
     /*Utilizamos o ELSE IF para caso o usuário digite o sexo masculino parta para
     a próxima pergunta que seria a idade desta pessoa. */
  else if (sexo == 'M'){
@@ -107,6 +112,7 @@ while(idade <=3 || idade >=100){
              else  if (idade >=65 && idade <=100){
               idosom++;}
  }
+
     /*Nesse caso perguntamos se a pessoa assistiu a sessão 1 ou 2,
       Caso a pessoa coloque um numero diferente utilizamos o WHILE 
       para repetir a pergunta.*/
@@ -159,11 +165,11 @@ printf("A %d pessoa comprou pipoca ou bebida? Digite 1 para sim e 2 para nao.", 
 scanf("%d", &lanche);
 while ( lanche !=1 && lanche !=2){
 printf("Invalido! Digite 1 ou 2");
-printf("A %d pessoa comprou pipoca? Digite 1 para sim e 2 para nao.", contador+1);
+printf("A %d pessoa comprou pipoca? Digite 1 para sim e 2 para nao:", contador+1);
 scanf("%d", &lanche);
 fflush (stdin);}
 
-if (lanche ==1){
+if (lanche ==1){ //MENU DE CARDAPIO
     quant_pipoca++;
 
     printf (" \nCardapio \n\n");
@@ -188,7 +194,7 @@ if (lanche ==1){
     case 5:
           printf ("\nAdicionou Pipoca Mista Salgada e Doce a sua bandeja!\n");break;}
 
-while (menu_pipoca !=1 && menu_pipoca !=2 && menu_pipoca !=3 && menu_pipoca !=4 && menu_pipoca !=5){
+while (menu_pipoca !=1 && menu_pipoca !=2 && menu_pipoca !=3 && menu_pipoca !=4 && menu_pipoca !=5){ //LAÇO CASO A PESSOA ESCOLHA UM NÃO VALIDO
     printf (" \nCardapio \n\n");
     printf ("1 - Pipoca Salgada - 18,00 R$ \n");
     printf ("2 - Pipoca de Chocolate  - 18,00 R$ \n");
@@ -212,7 +218,7 @@ while (menu_pipoca !=1 && menu_pipoca !=2 && menu_pipoca !=3 && menu_pipoca !=4 
           printf ("\nAdicionou Pipoca Mista Salgada e Doce a sua bandeja!\n");break;}}
 
 
-switch (menu_pipoca){
+switch (menu_pipoca){ // contadores para armazenar o sabor da pipoca
 
 case 1: pip_sal++;break;
 case 2: pip_choc++;break;
