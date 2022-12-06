@@ -112,7 +112,6 @@ while(idade <=3 || idade >=100){
              else  if (idade >=65 && idade <=100){
               idosom++;}
  }
-
     /*Nesse caso perguntamos se a pessoa assistiu a sessão 1 ou 2,
       Caso a pessoa coloque um numero diferente utilizamos o WHILE 
       para repetir a pergunta.*/
