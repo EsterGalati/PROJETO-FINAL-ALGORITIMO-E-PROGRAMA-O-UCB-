@@ -1,3 +1,7 @@
+  //Nome: Luiza Munis Nascimento  Matricula: UC22201024  Curso:Engenharia de software.
+  //Nome: Ester Luiza Siqueira Correa Galati  Matricula: UC22200640  Curso:Ciencia da Computacao 
+  //Nome: Cristiano Mundin Borges Junior  Matricula: UC22200034  Curso:Ciencia da Computacao 
+
 #include <stdio.h>
 #include <math.h> //biblioteca matematica
 #include <strings.h> //biblioteca de strings
@@ -15,11 +19,6 @@ int main (){
     int menu_pipoca; // variaveis menu de pipoca
     float pipoca_din=0, pip_sal=0,pip_choc=0, pip_car=0, pip_chocomelo=0, pip_ds=0;
     int quant_pipoca=0, lanche;
-
-    printf("Nome: Luiza Munis Nascimento\nMatricula: UC22201024\nCurso:Engenharia de software.");
-    printf("\n\nNome: Ester Luiza Siqueira Correa Galati\nMatricula: UC22200640\nCurso:Ciencia da Computacao ");
-    printf("\n\nNome: Cristiano Mundin Borges Junior \nMatricula: UC22200034\nCurso:Ciencia da Computacao ");
-
 
     /*Logo abaixo temos o começo do nosso código que pergunta o nome do filme e a quantidade de sessões.*/
     printf("\n\nBem Vindo, para melhor lhe atender informe:\n");
