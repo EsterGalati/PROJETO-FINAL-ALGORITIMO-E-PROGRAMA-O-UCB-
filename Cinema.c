@@ -161,8 +161,9 @@ case 1: cont_int2++;break;
 case 2: cont_mei2++;break;}
 }
 
-printf("A %d pessoa comprou pipoca ou bebida? Digite 1 para sim e 2 para nao.", contador+1);// Nova funcionalidade
+printf("A %d pessoa comprou pipoca? Digite 1 para sim e 2 para nao:", contador+1);// Nova funcionalidade
 scanf("%d", &lanche);
+fflush (stdin);
 while ( lanche !=1 && lanche !=2){
 printf("Invalido! Digite 1 ou 2");
 printf("A %d pessoa comprou pipoca? Digite 1 para sim e 2 para nao:", contador+1);
